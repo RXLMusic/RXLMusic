@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="index.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<div class="frontpage">
+  <img class="image1" src="/Avatars/blank-frontpage.png">
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <div class="mySlides">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6ZSv9t4Ni3c7bZomebjuV1?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+  <div class="mySlides">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1vNjZ6tfOWx6UuinTdr4HT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+  <div class="mySlides">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1ILnwhVoYvbkBhQfhgtHjS?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+  <div class="mySlides">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3nYY2wpSFVHGWrXfU4006D?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+ 
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/3tPgfZwdY4zUtTZFe3bH9p?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+ 
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center">
+    <img class="image1" src="/Avatars/avatar-moded.png" style="width: 100%; height: 100%;">
+    <h2 class="w3-wide">RXL_Sounds</h2>
+    <p class="w3-opacity"><i> Techno & psytrance DJ </i></p>
+    <p class="w3-justify">I am a guy from Sweden who makes electronic dance music and that is aiming to be a full-time producer/artist some day. I wouldn't say that I'm genre specific but I mostly make trance with a mix of techno. It's all about the driving 
+      rhytm and storytelling for me. 
+    </p>
+   
+    </div>
+  </div>
+
+
+  
+<!-- End Page Content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-dark-grey w3-xlarge">
+  <h1 class="social-media-text" style="font-weight: bold; font-size: 55px;">SOCIAL MEDIA</h1>
+  <ul class="social-icons">
+
+    <li>
+      <a href="https://www.instagram.com/rxl_sound" target="_blank">
+        <!-- Replace "instagram-icon.png" with the actual path to your Instagram icon -->
+        <h1>Instagram</h1>
+      </a>
+    </li>
+    <li>
+      <a href="https://linktr.ee/rxl_sound" target="_blank">
+        <!-- Replace "twitter-icon.png" with the actual path to your Twitter icon -->
+        <h1>Projects</h1>
+      </a>
+    </li>
+    <li>
+      <a href="
+      https://open.spotify.com/artist/3tPgfZwdY4zUtTZFe3bH9p?si=1PYrZgWpSO2gzYQi6TFv5A" target="_blank">
+        <!-- Replace "twitter-icon.png" with the actual path to your Twitter icon -->
+        <h1>Spotify</h1>
+      </a>
+    </li> 
+    <!-- Add more social media links as needed -->
+  </ul>
+</footer>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 6000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+//not used atm
+function togglePlayPause() {
+      var iframe = document.getElementById("spotifyIframe");
+      if (iframe) {
+        // Check if the iframe is paused
+        if (iframe.contentWindow.postMessage) {
+          iframe.contentWindow.postMessage('{"event":"command","func":"togglePlayPause","args":""}', '*');
+        }
+      }
+    }
+</script>
+
+</body>
+</html>
